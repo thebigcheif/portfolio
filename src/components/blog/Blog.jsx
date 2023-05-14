@@ -28,7 +28,7 @@ const Blog = () => {
       .then((response) => response.json())
       .then((data) => setImages(data))
       .catch((error) => console.error(error));
-  }, []);
+  }, [postsUrl, imagesUrl]);
 
   const featuredMedia = posts.map((data) => data.featured_media);
 
